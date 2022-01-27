@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SettingView: View {
     // 秒数設定(初期値)
-    @State var timerValue = 10
+    @AppStorage("timer_value") var timerValue = 10
     
     var body: some View {
         ZStack {
